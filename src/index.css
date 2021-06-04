@@ -1,0 +1,74 @@
+h2{
+ border: 1px solid rgb(238, 206, 206);
+ box-sizing: border-box;
+ color: rgb(43, 41, 41);
+ text-decoration: double;
+ text-shadow:3px 3px 3px #07cde7;
+ background-color:rgb(240, 233, 233);
+ text-align: center;
+ vertical-align: middle;
+font-size: 60px;
+ height: 120px;
+ box-shadow:10px 10px 5px #000000;
+ margin-bottom: 60px;
+ border-radius: 20px 20px 20px 20px;
+
+
+
+}
+
+h3{
+ background-color: rgb(238, 206, 206);
+ color: #000000;
+ text-align: center;
+
+}
+
+.footer-div {
+  padding: 20px;
+  background-color: burlywood;
+  margin-top: 100px;
+  text-align: center;
+ 
+
+}
+.footer-div p{
+ text-align: center;
+ font-size: 30px;
+}
+
+
+.Nav1 ul {
+  list-style-type: none;
+  margin: 2px;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: #000000;
+  font-size: 20px;
+  color: blue;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Nav1 ul li {
+  float: right;
+}
+
+.Nav1 ul li a {
+  display: block;
+  padding: 10px;
+  background-color: #dddddd;
+}
+
+.List{
+background-color: red;
+border: 1px solid red;
+font-size: 20px;
+ text-align: left;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.List ListGroupItem{
+
+ font-size: 50px;
+
+}
