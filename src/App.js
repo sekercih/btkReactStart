@@ -6,10 +6,7 @@ import ProductList from "./ProductList";
 
 import { Container, Row, Col } from "reactstrap";
 import Footer from "./Footer";
-
 function App() {
-
-
   return (
     <div>
       <Container>
@@ -32,5 +29,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
