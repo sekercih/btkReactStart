@@ -5,15 +5,18 @@ import "./index.css";
 
 class CatagoriyList extends Component {
   state = {
-    categories: [
-      { categoryId: 1, categoryName: "Baverages" },
-      { categoryId: 2, categoryName: "Condiments" },
-    ],
+    categories: []
   };
-  currentCategory = "";
-  changeCategory = (category) => {
-    this.setState({ currentCategory: category.categoryName });
-  };
+  componentDidMount(){
+    this.getCategories();
+  }
+
+getCategories=()=>{
+  fetch("http://localhost:3000/categories").then(response=>response.json()).
+  then(data=>this.setState({categories:data}));
+}
+
+
   render() {
     return (
       <div>
@@ -23,9 +26,8 @@ class CatagoriyList extends Component {
             {this.state.categories.map((category) => (
               <ListGroupItem
                 onClick={() => this.changeCategory(category)}
-                key={category.categoryId}
-                tag="a"
-                href="#"
+                key={category.id}
+              
               >
                 {category.categoryName}
               </ListGroupItem>
